@@ -1,3 +1,5 @@
+package Day2;
+
 public class Data_type_Change {
 
     public static void main(String[] args) {

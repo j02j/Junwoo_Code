@@ -1,3 +1,5 @@
+package Day3;
+
 public class If {
 //    if(조건식) {  // 조건식이 true일 때 아래 실행문들 동작, false면 미실행
 //        실행문;

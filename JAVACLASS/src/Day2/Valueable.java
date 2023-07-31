@@ -1,3 +1,5 @@
+package Day2;
+
 public class Valueable {
     // Keyword : 선언 - 초기화
 

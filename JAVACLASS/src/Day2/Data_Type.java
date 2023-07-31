@@ -1,3 +1,5 @@
+package Day2;
+
 public class Data_Type {
 //    -	정수 자료형 : byte, short, int, long
 //    -	실수 자료형 : float, double
