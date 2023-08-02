@@ -2,7 +2,7 @@ package Day3;
 
 import java.util.Scanner;
 
-public class HomeWork {
+public class HomeWork_Day3 {
     public static void main(String[] args) {
 //        과제
 //        1. 조건문을 활용해서 입력한 수만큼 값을 반복해서 출력할 것
