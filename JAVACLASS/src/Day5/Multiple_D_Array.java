@@ -1,4 +1,4 @@
-package Day4;
+package Day5;
 
 public class Multiple_D_Array {
     public static void main(String[] args){
