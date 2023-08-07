@@ -1,13 +1,13 @@
 package Day5;
 
-public class One_D_Array {
-    public static void main(String[] args){
-        //길이가 5인 int형 1차원 배열의 생성
-        int[] ar1 = new int[5];
+public class One_D_Array_hw {
+    public static void main(String[] args) {
+        //길이가 5인 int형 1차월 배열의 생성
+        int ar1[] = new int[5];
 
         //길이가 7인 double형 1차원 배열의 생성
         double[] ar2 = new double[7];
-//
+
         //배열의 참조변수와 인스턴스 생성 분리
         float[] ar3;
         ar3 = new float[9];
@@ -17,7 +17,7 @@ public class One_D_Array {
         System.out.println("배열 ar2 길이 : " + ar2.length);
         System.out.println("배열 ar3 길이 : " + ar3.length);
 
-///////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////
 
         String[] ar = new String[7];
         ar[0] = new String("Java");
@@ -30,24 +30,22 @@ public class One_D_Array {
 
         int cnum = 0;
 
-        for(int i = 0; i < ar.length; i++)
+        for (int i = 0; i<ar.length; i++) {
             cnum += ar[i].length();
-
+        }
         System.out.println("총 문자의 수 : " + cnum);
 
-///////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////
 
-        int[] arr = {1,2,3,4,5,6,7};
-        int sum = sumofAry(arr);
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+        int sum = sumOfAry(arr);
         System.out.println(sum);
-    }
-
-    static int sumofAry(int[] ar){
+        }
+    static int sumOfAry(int[] ar) {
         int sum = 0;
         for(int i = 0; i<ar.length; i++)
             sum += ar[i];
         return sum;
+
     }
-
 }
-
