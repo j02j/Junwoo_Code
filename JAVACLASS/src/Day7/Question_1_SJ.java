@@ -8,33 +8,22 @@ package Day7;
        System.out.println(new SalaryMan().getAnnualGross());
 	        System.out.println(new SalaryMan(2_000_000).getAnnualGross());
 */
-public class Question_1 {
+public class Question_1{
     public static void main(String[] args) {
-
-        SalaryMan user = new SalaryMan();
-        user.salary = 1500000;
-        // 연봉 1800만 * 보너스 750만  // 최저도 못받는 인생인데 보너스가 쎄네
-        System.out.println(user.getAnnualGross());
-        System.out.println();
         System.out.println(new SalaryMan().getAnnualGross());
         System.out.println(new SalaryMan(2000000).getAnnualGross());
 
 
     }
-}
-class SalaryMan {
-    int salary;
-    //월 급여 액 저장 초기값 1,000,000 저장
-    SalaryMan(){
-        this.salary = 1000000;
-    }
-    SalaryMan(int salary){ // 생성자에서 인자 월 급여액을 지정하기 위한 재정의
-        this.salary=salary;
-    }
-    public int getAnnualGross() { // 연봉.. 연봉은 월 * 12 인데
-        // 보너스 500%를 수령해야 하니까 5.0을 곱해야하지만 int 정수형이므로 5만 곱하고
 
-        return (this.salary*12)+(this.salary*5); // 연봉 + 500% 보너스 수령
-        // 연봉 리턴
+}
+
+class SalaryMan {
+    public int salary = 1000000;
+    public int bonus;
+
+    public void getAnnualGross() {
+        bonus = salary * 5;
+        int monthlyPayment = bonus + salary;
     }
 }

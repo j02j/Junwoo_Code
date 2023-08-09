@@ -8,18 +8,13 @@ package Day5;
 //· 다음은 원을 나타내는 클래스 Circle
 public class HomeWork_Day5_2{
     public static void main(String[] args) {
-        Circle circle = new Circle(2.8);
+        //Circle circle = new Circle(2.8);
         Cylinder cylinder = new Cylinder(5.6, new Circle(2.8));
 
-        circle.getArea();
+        //circle.getArea();
         cylinder.getVolume();
 
         System.out.println(cylinder.getVolume());
-
-
-
-
-
     }
 }
 
