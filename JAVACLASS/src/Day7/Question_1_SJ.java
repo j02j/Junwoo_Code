@@ -8,22 +8,27 @@ package Day7;
        System.out.println(new SalaryMan().getAnnualGross());
 	        System.out.println(new SalaryMan(2_000_000).getAnnualGross());
 */
-public class Question_1{
+public class Question_1_SJ{
     public static void main(String[] args) {
         System.out.println(new SalaryMan().getAnnualGross());
         System.out.println(new SalaryMan(2000000).getAnnualGross());
-
-
     }
-
 }
 
 class SalaryMan {
     public int salary = 1000000;
     public int bonus;
 
-    public void getAnnualGross() {
+    SalaryMan(){
+
+    }
+    SalaryMan(int num) {
+
+    }
+
+    public int getAnnualGross() {
         bonus = salary * 5;
-        int monthlyPayment = bonus + salary;
+        int annualPayment = bonus + (salary * 12);
+        return annualPayment;
     }
 }

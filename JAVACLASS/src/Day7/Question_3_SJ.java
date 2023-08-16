@@ -9,7 +9,7 @@ package Day7;
         System.out.println("둘레: " + rc.getCircumference());
  */
 
-public class Question_3 {
+public class Question_3_SJ {
     public static void main(String[] args) {
         Rectangle rc = new Rectangle();
         System.out.println("Area: " + rc.getArea(3.82, 8.65));
@@ -23,14 +23,14 @@ class Rectangle {
     double width;
     double length;
 
-    public static double getArea(double width, double length) {
+    public double getArea(double width, double length) {
         this.width = width;
         this.length = length;
         double area = width * length;
         return area;
     }
 
-    public static double getCircumference(double width, double length) {
+    public double getCircumference(double width, double length) {
         this.width = width;
         this.length = length;
         double circumference = (2 * width + 2 * length);

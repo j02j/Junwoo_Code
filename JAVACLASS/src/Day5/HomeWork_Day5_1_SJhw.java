@@ -19,7 +19,7 @@ public class HomeWork_Day5_1_SJhw {
 
     }
 
-    public static int sin(String nums, char[] numsArray) {
+    public static char sin(String nums, char[] numsArray) {
         for (int i = 0; i < nums.length(); i++) {
             if (i >= 8) {
                 System.out.print("*");
@@ -29,5 +29,6 @@ public class HomeWork_Day5_1_SJhw {
             }
             return (numsArray[i]);
         }
+        return ' ';
     }
 }

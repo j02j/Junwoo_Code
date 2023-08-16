@@ -15,22 +15,38 @@ package Day7;
         · 인출 상한 금액은 잔액까지로 하며, 이 경우 이러한 상황을 출력
         · 클래스 AccountTest의 main() 메소드에서 인출 상한 이상의 금액을 인출하려는 메소드를 호출하여 출력
 */
-public class Question_2{
+public class Question_2_SJ{
+    public static void main(String[] args){
+        Account account = new Account("owner", 1000);
+        account.deposit(40);
+        account.withdraw(10000);
+
+    }
 
 
 }
 
 class Account {
-    public static void main(String[] args) {
-        public long deposit(long amount);
-        public long withdraw(long amount);
-    }
+
+
+        public long deposit(long amount) {
+            return this.balance + amount;
+        };
+        public long withdraw(long amount) {
+            if(balance - amount >= 0){
+                return this.balance - amount;
+            }
+            else {
+                System.out.println("Can't withdraw");
+            }
+            return 0;
+        };
 
     //field
     private String owner;
 
     //getter
-    public String getOwner{
+    public String getOwner(){
         return owner;
     }
     //setter
@@ -42,12 +58,29 @@ class Account {
     private long balance;
 
     //getter
-    public long getBalance{
+    public long getBalance(){
         return balance;
     }
 
     //setter
-    public void setBalance(String Balance){
+    public void setBalance(long balance){
+        this.balance = balance;
+    }
+
+    Account() {
+
+    }
+
+    Account(String Owner) {
+        this.owner = Owner;
+    }
+
+    Account(long Balance) {
+        this.balance = Balance;
+    }
+
+    Account(String Owner, long Balance){
+        this.owner = Owner;
         this.balance = Balance;
     }
 
