@@ -1,6 +1,6 @@
 package Day10;
 
-public class Test_Class_1 {
+public class Test_Class_1_SJ {
     //1. A objA = new objA(); 에 의해 생성되는 객체 objA의 멤버들을 모두 나열하라.
     //2. B objB = new objB(): 에 의해 생성되는 객체 objB의 멤버들을 모두 나열하라.
     //3. C objC = new objC(); 에 의해 생성되는 객체 objC의 멤버들을 모두 나열하라.
@@ -18,20 +18,20 @@ public class Test_Class_1 {
     //(3) 이유:
 }
 
-class A {
+class A_SJ {
     private int a;
     public void set(int a) { this.a = a; }
 }
 
-class B extends A {
+class B_SJ extends A_SJ {
     protected int b, c;
 }
 
-class C extends B {
+class C_SJ extends B_SJ {
     public int d, e;
 }
 
-class D extends C {
+class D_SJ extends C_SJ {
     public void f() {
         //a = 1; // (1)
         set(10); // (2)
