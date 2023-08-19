@@ -7,7 +7,7 @@ public class Man_SJ {
     }
 }
 
-class BusinessMan extends Man_SJ{
+class BusinessMan_SJ extends Man_SJ{
     String company;
     String position;
 

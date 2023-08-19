@@ -15,6 +15,7 @@ public class Test_Class_1 {
         }
     }
     */
+    //(3) 이유:
 }
 
 class A {
@@ -28,4 +29,13 @@ class B extends A {
 
 class C extends B {
     public int d, e;
+}
+
+class D extends C {
+    public void f() {
+        //a = 1; // (1)
+        set(10); // (2)
+        b = 20; // (3)
+        d = 30; // (4)
+    }
 }
