@@ -6,11 +6,12 @@ public class Test_Class_3_SJ {
 //-class Point : 한점을 구성하는 x,y좌표, 점을 출력하는 메소드
 //-class ColorPoint : 한점을 구성하는 x,y좌표, 점을 출력하는 메소드, 점의 색깔, 컬러 점의 좌표 출력하는 메소드
     public static void main(String[] args) {
+        Point p = new Point();
+        p.xAndy(1, 2);
+
         ColorPoint cp = new ColorPoint();
-        cp.xAndy(1, 2);
         cp.xAndy(4,5);
         cp.colorOfPoint("red");
-        cp.coordinateOfColorPoint(7, 10);
     }
 }
 
@@ -34,8 +35,8 @@ class ColorPoint extends Point{
 
     @Override
     public void xAndy(int x, int y) {
-        System.out.println("x coordinate: " + x);
-        System.out.println("y coordinate: " + y);
+        System.out.println("color x coordinate: " + x);
+        System.out.println("color y coordinate: " + y);
 
         System.out.println("(" + x + ", " + y + ")");
     }

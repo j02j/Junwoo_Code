@@ -1,26 +1,64 @@
 package Day11;
 
-public class GameEx {
+public class GameEx_SJ {
     public static void main(String[] args){
+        Marine m = new Marine();
+        m.setX("marine", 10);
+        m.setY("marine", 20);
+        m.move("Marine", 20, 10);
+        m.stop("marine");
+        m.stimPack();
+
 
     }
 }
+class Unit{
+    String unit;
+    int x;
+    int y;
+    void move(String unit, int x, int y) {
+        this.unit = unit;
+        this.x = x;
+        this.y = y;
+        System.out.println(unit + " moved " + x + " to x-axis and " + y + " move to y-axis.");
+    }
+    void stop(String unit) {
+        this.unit = unit;
+        System.out.println("stop " + unit);
 
-class Marine_SJ{ //보병
-    int x, y; //현재 위치
-    void move(int x, int y)     {/*지정된 위치로 이동*/}
-    void stop()                 {/*현재 위치에 정지*/}
-    void stimPack()             {/*스팀팩을 사용한다.*/}
+        }
+
+    public int getX() {
+        return x;
+    }
+    public int getY() {
+        return y;
+    }
+    public void setX(String unit, int x) {
+        this.x = x;
+        this.unit = unit;
+        System.out.println("initial x position of " + unit + ": " + x);
+    }
+    public void setY(String unit, int y) {
+        this.y = y;
+        this.unit = unit;
+        System.out.println("initial y position of " + unit + ": " + y);
+    }
+}
+class Marine extends Unit{ //보병
+    void stimPack()  {
+        System.out.println(unit + " use stim pack.");
+    }            {/*스팀팩을 사용한다.*/}
 }
 
-class Tank_SJ{ //탱크
+class Tank{ //탱크
     int x, y; //현재 위치
     void move(int x , int y)    {/*지정된 위치로 이동*/}
     void stop()                   {/*현재 위치에 정지*/}
     void changeMode()           {/*공격모드를 변환한다.*/}
 }
 
-class Trooper_SJ{ //수송선
+class Trooper{ //수송선
     int x, y; //현재위치
     void move(int x, int y)     {/*지정된 위치로 이동한다.*/}
     void stop()                 {/*현재 위치에 정지한다.*/}
