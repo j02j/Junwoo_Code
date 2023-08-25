@@ -8,5 +8,6 @@ package Day11;
 //    D클래스 : 전체 출력
 public class Test_Class_4_SJ {
     public static void main(String[] args) {
-        
+
     }
+}
