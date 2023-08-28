@@ -1,6 +1,4 @@
 package Day13;
-
-public class SmallTest_1 {
 /*    자동차 클래스 구현하기
     <문제>
     아래의 요구사항을 만족시키는 Car 클래스를 구현하시오
@@ -16,4 +14,27 @@ public class SmallTest_1 {
     기어변경
     경적울리기
     */
+
+public class SmallTest_1 {
+    public static void main (String[] args) {
+
+    }
+}
+
+class Car {
+    String name;
+    int displacement;
+    String size;
+
+    void acceleration() {
+
+    }
+
+    void changeGear(){
+
+    }
+
+    void honk() {
+
+    }
 }

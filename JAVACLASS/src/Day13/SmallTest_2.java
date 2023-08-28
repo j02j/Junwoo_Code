@@ -42,4 +42,46 @@ public class SmallTest_2 {
     -4000
     -5400
     */
+    public static void main(String[] args) {
+        Developer tom = new Developer("Tom", 2);
+        Developer john = new Developer("John", 5);
+        Developer sally = new Developer("Sally", 9);
+        System.out.println(tom.salary());
+        System.out.println(john.salary());
+        System.out.println(sally.salary());
+    }
+}
+
+class Developer{
+    String name;
+    int career;
+    int standardAnnualIncome;
+    int annualIncome;
+
+    Developer() {
+
+    }
+
+    Developer(String name, int career) {
+        this.name = name;
+        this.career = career;
+    }
+
+    void level() {
+        if(this.career < 3) {
+            standardAnnualIncome = 2800;
+        }
+        else if(this.career < 7) {
+            standardAnnualIncome = 3500;
+        }
+        else {
+            standardAnnualIncome = 4500;
+        }
+    }
+
+    int salary(){
+        level();
+        annualIncome = standardAnnualIncome + (100 * this.career);
+        return annualIncome;
+    }
 }
